@@ -1,0 +1,105 @@
+@import "../../node_modules/stylie/resources/stylesheets/stylie.less";
+.ts-ss {
+	position: relative;
+	// margin: 0 0 10px;
+	overflow: hidden;
+	// padding: 40px 0 60px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		// white-space: nowrap;
+		list-style-type: none;
+
+		li {
+			-webkit-transform: translateZ(0);
+			-moz-transform: translateZ(0);
+			transform: translateZ(0);
+			float: left;
+			display: block;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+
+			figure{
+				img{
+					max-height: 100%;
+				}
+			}
+		}
+
+		li > a,
+		li > div {
+			display: block;
+			text-align: center;
+			outline: none;
+		}
+
+		li > a img {
+			border: none;
+			display: block;
+			margin: 0 auto;
+			max-width: 75%;
+		}
+
+	}
+
+	nav {
+		span {
+			position: absolute;
+			top: 50%;
+			width: (@sizexl * 0.7);
+			height: (@sizexl * 0.7);
+			background: @accentColor;
+			color: @textPrimaryColor;
+			font-size: (@sizexl * 0.7);
+			text-align: center;
+			margin-top: (-@sizexl  /2);
+			line-height: (@sizexl * 0.7);
+			cursor: pointer;
+			font-weight: normal;
+		}
+
+		span:hover {
+			background: @primaryColor;
+		}
+
+		span.ts-ss-slidenext {
+			right: 0em;
+		}
+
+		span.ts-ss-slideprev {
+			left: 0em;
+		}
+	}
+}
+
+.ts-ss-dots {
+	position: absolute;
+	bottom: 0em;
+	white-space: nowrap;
+	text-align: center;
+	width: 100%;
+
+	span {
+		display: inline-block;
+		width: @sizelg;
+		height: @sizelg;
+		.ts-bg-light-primary-color;
+		margin: @sizesm;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	span:hover {
+		.ts-bg-primary-color;
+	}
+
+	span.ts-ss-currentdot {
+		.ts-bg-accent-color;
+		box-shadow: 0 0 0 @sizexs @accentColor;
+		-webkit-transition: box-shadow 0.2s ease-in-out;
+		-moz-transition: box-shadow 0.2s ease-in-out;
+		transition: box-shadow 0.2s ease-in-out;
+	}
+}
