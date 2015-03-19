@@ -2,7 +2,7 @@
   "title": "Stylie Tables",
   "name": "stylie.tables",
   "description": "A very simple (framework independent) 100% width HTML slider that scales down to mobile. Added Touch & Swipe Support. Inspired by http://tympanus.net/codrops/2013/02/26/full-width-image-slider/",
-  "version": "1.0.1",
+  "version": "1.0.11",
   "main": "index.js",
   "engines": {
     "node": ">=0.10.x"
